@@ -42,11 +42,11 @@ def logic(algo, data):
     })
 
 
-pair = ['BTC', 'USD']  # Use ETH pricing data on the BTC market
-days_history = 300  # From there collect X days of data
+pair = ['BTC', 'USD']  
+days_history = 300 
 exchange = 'Bitstamp'
 
-# Request data from cryptocompare.com
+# Request data
 df = cc.load_dataframe(pair, days_history, exchange)
 
 # Algorithm settings
